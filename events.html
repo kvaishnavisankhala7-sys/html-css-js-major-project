@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events | CampusConnect</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>CampusConnect</h2>
+  <button id="menuToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="clubs.html">Clubs</a></li>
+    <li><a href="events.html" class="active">Events</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+  </ul>
+</nav>
+
+<section class="section">
+  <h2>Upcoming Events</h2>
+  <div class="event-grid">
+
+    <div class="event-block">
+      <p class="event-date">📅 25 March 2026</p>
+      <h3>Hackathon 2026</h3>
+      <p>📍 Venue: ITM Auditorium</p>
+      <p style="color:#94a3b8;font-size:13px;margin-top:8px;">A 24-hour coding competition for teams of 2–4. Build innovative solutions judged by faculty and industry mentors.</p>
+      <button class="btn register-btn" data-event="Hackathon 2026" onclick="registerEvent('Hackathon 2026')" style="margin-top:14px;">Register</button>
+    </div>
+
+    <div class="event-block">
+      <p class="event-date">📅 5 April 2026</p>
+      <h3>Startup Pitch Competition</h3>
+      <p>📍 Venue: Innovation Lab</p>
+      <p style="color:#94a3b8;font-size:13px;margin-top:8px;">Present your startup idea to a panel of investors and startup mentors. Best ideas get incubation support.</p>
+      <button class="btn register-btn" data-event="Startup Pitch Competition" onclick="registerEvent('Startup Pitch Competition')" style="margin-top:14px;">Register</button>
+    </div>
+
+    <div class="event-block">
+      <p class="event-date">📅 10 April 2026</p>
+      <h3>Sports Championship</h3>
+      <p>📍 Venue: University Ground</p>
+      <p style="color:#94a3b8;font-size:13px;margin-top:8px;">Inter-college sports championship covering football, cricket, badminton and athletics events.</p>
+      <button class="btn register-btn" data-event="Sports Championship" onclick="registerEvent('Sports Championship')" style="margin-top:14px;">Register</button>
+    </div>
+
+    <div class="event-block">
+      <p class="event-date">📅 18 April 2026</p>
+      <h3>Cultural Festival</h3>
+      <p>📍 Venue: Main Stage</p>
+      <p style="color:#94a3b8;font-size:13px;margin-top:8px;">A celebration of performing arts — dance, music, theatre and talent showcases from all clubs.</p>
+      <button class="btn register-btn" data-event="Cultural Festival" onclick="registerEvent('Cultural Festival')" style="margin-top:14px;">Register</button>
+    </div>
+
+    <div class="event-block">
+      <p class="event-date">📅 2 May 2026</p>
+      <h3>AI & Tech Expo</h3>
+      <p>📍 Venue: Tech Block</p>
+      <p style="color:#94a3b8;font-size:13px;margin-top:8px;">Showcase AI models, robotics projects and tech innovations built by student clubs.</p>
+      <button class="btn register-btn" data-event="AI & Tech Expo" onclick="registerEvent('AI & Tech Expo')" style="margin-top:14px;">Register</button>
+    </div>
+
+    <div class="event-block">
+      <p class="event-date">📅 15 May 2026</p>
+      <h3>Cyber Security CTF</h3>
+      <p>📍 Venue: Computer Lab 3</p>
+      <p style="color:#94a3b8;font-size:13px;margin-top:8px;">Capture The Flag competition — test your hacking skills and win prizes.</p>
+      <button class="btn register-btn" data-event="Cyber Security CTF" onclick="registerEvent('Cyber Security CTF')" style="margin-top:14px;">Register</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <h2>Past Events</h2>
+  <div class="event-grid">
+    <div class="event-block"><h3>AI Workshop</h3><p>Students explored machine learning models and practical AI applications through interactive sessions.</p></div>
+    <div class="event-block"><h3>Cyber Security Bootcamp</h3><p>Participants learned about ethical hacking techniques and cybersecurity best practices.</p></div>
+    <div class="event-block"><h3>Robotics Exhibition</h3><p>Engineering students showcased robotics projects and automation systems developed during workshops.</p></div>
+    <div class="event-block"><h3>Design Thinking Seminar</h3><p>Students learned innovative problem-solving techniques through design thinking activities.</p></div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 ITM Skills University &nbsp;|&nbsp; CampusConnect</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard | CampusConnect</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>CampusConnect</h2>
+  <button id="menuToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="clubs.html">Clubs</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="dashboard.html" class="active">Dashboard</a></li>
+  </ul>
+</nav>
+
+<!-- Membership Summary -->
+<section class="section">
+  <h2>Student Dashboard</h2>
+  <div class="stats-grid">
+    <div class="stat-box">
+      <h2 id="clubCount">0</h2>
+      <p>Joined Clubs</p>
+    </div>
+    <div class="stat-box">
+      <h2 id="attendanceCount">0</h2>
+      <p>Events Registered</p>
+    </div>
+    <div class="stat-box">
+      <h2>4</h2>
+      <p>Workshops Attended</p>
+    </div>
+    <div class="stat-box">
+      <h2>2</h2>
+      <p>Certificates Earned</p>
+    </div>
+  </div>
+</section>
+
+<!-- Recent Activity -->
+<section class="section" style="padding-top:0">
+  <h2>Recent Activity</h2>
+  <div class="event-grid">
+    <div class="event-block">
+      <h3>Last Club Joined</h3>
+      <p id="recentClub" style="color:#94a3b8;margin-top:8px;">No clubs joined yet.</p>
+    </div>
+    <div class="event-block">
+      <h3>Last Event Registered</h3>
+      <p id="recentEvent" style="color:#94a3b8;margin-top:8px;">No events registered yet.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Joined Clubs List -->
+<section class="section" style="padding-top:0">
+  <h2>Your Clubs</h2>
+  <div id="joinedClubsList" class="joined-clubs-grid"></div>
+</section>
+
+<!-- Registered Events -->
+<section class="section" style="padding-top:0">
+  <h2>Registered Events</h2>
+  <div id="registeredEventsList" class="registered-events-list"></div>
+</section>
+
+<!-- Attendance Tracker -->
+<section class="section" style="padding-top:0">
+  <h2>Attendance Tracker</h2>
+  <table class="attendance-table">
+    <thead>
+      <tr>
+        <th>Club</th>
+        <th>Category</th>
+        <th>Sessions Attended</th>
+      </tr>
+    </thead>
+    <tbody id="attendanceTableBody">
+      <tr><td colspan="3" style="text-align:center;padding:20px;color:#94a3b8;">Join clubs to track attendance.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- Achievements -->
+<section class="section" style="padding-top:0">
+  <h2>Achievements</h2>
+  <div class="stats-grid">
+    <div class="stat-box"><h2>4</h2><p>Workshops Attended</p></div>
+    <div class="stat-box"><h2>2</h2><p>Certificates Earned</p></div>
+    <div class="stat-box"><h2>3</h2><p>Hackathons Participated</p></div>
+    <div class="stat-box"><h2>5</h2><p>Projects Built</p></div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 ITM Skills University &nbsp;|&nbsp; CampusConnect</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

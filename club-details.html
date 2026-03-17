@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Club Details | CampusConnect</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>CampusConnect</h2>
+  <button id="menuToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="clubs.html">Clubs</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+  </ul>
+</nav>
+
+<section class="section">
+  <div class="details">
+    <img id="clubImage" alt="Club">
+
+    <div>
+      <span id="clubBadge" class="badge"></span>
+      <h2 id="clubName" style="color:#fbbf24;font-size:36px;margin:10px 0 6px;"></h2>
+      <p><strong>Category:</strong> <span id="clubCategory"></span></p>
+      <p style="margin-top:8px;"><strong>Faculty Mentor:</strong> <span id="clubMentor"></span></p>
+      <br>
+      <p id="clubDescription" style="line-height:1.8;color:#cbd5e1;"></p>
+      <br>
+      <h3 style="color:#fbbf24;margin-bottom:12px;">Club Activities</h3>
+      <ul id="clubActivities" style="color:#cbd5e1;line-height:2.2;padding-left:4px;list-style:none;"></ul>
+      <br>
+      <button id="joinBtn" class="btn" style="font-size:16px;padding:12px 28px;">Join This Club</button>
+      <a href="clubs.html" style="margin-left:14px;color:#94a3b8;font-size:14px;">← Back to Clubs</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <h2>Club Achievements</h2>
+  <div id="clubAchievements" class="event-grid"></div>
+</section>
+
+<footer>
+  <p>© 2026 ITM Skills University &nbsp;|&nbsp; CampusConnect</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
